@@ -1,0 +1,14 @@
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/bin/Debug/net10.0/InventarioApp
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/bin/Debug/net10.0/InventarioApp.deps.json
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/bin/Debug/net10.0/InventarioApp.runtimeconfig.json
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/bin/Debug/net10.0/InventarioApp.dll
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/bin/Debug/net10.0/InventarioApp.pdb
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.AssemblyInfoInputs.cache
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.AssemblyInfo.cs
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.csproj.CoreCompileInputs.cache
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.dll
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/refint/InventarioApp.dll
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.pdb
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.genruntimeconfig.cache
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/ref/InventarioApp.dll
