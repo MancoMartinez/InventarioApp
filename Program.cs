@@ -3,28 +3,98 @@
 // Estado: Estructura profesional configurada
 // ============================================
 
-using System.Reflection;
 
-var assembly = Assembly.GetExecutingAssembly();
-var version = assembly.GetName().Version;
+//Variables
+int cantidadProductos = 0;
+decimal valorTotalDelInventario = 0.00m;
+bool sistemaActivo = true;
 
-Console.WriteLine("╔══════════════════════════════════════╗");
-Console.WriteLine("║   SISTEMA DE GESTIÓN DE INVENTARIO   ║");
-Console.WriteLine("╚══════════════════════════════════════╝");
-Console.WriteLine();
-Console.WriteLine($"Version: {version}");
-Console.WriteLine($"Plataforma: {Environment.OSVersion}");
-Console.WriteLine($".NET Version: {Environment.Version}");
-Console.WriteLine();
-Console.WriteLine("Estructura del proyecto:");
-Console.WriteLine("  InventarioApp/");
-Console.WriteLine("   |-- Program.cs");
-Console.WriteLine("   |-- InventarioApp.csproj");
-Console.WriteLine("   |--gitignore");
-Console.WriteLine("   |--src/");
-Console.WriteLine("      |--Models/ (Proxima clase");
-Console.WriteLine("Configuracion .csproj");
-Console.WriteLine("Carpeta src/ creada");
-Console.WriteLine("Metadatos configurados");
-Console.WriteLine();
-Console.WriteLine("Proximo paso: Checkpoint y Entregable");
+MostrarBanner();
+
+bool continuar = true;
+
+while (continuar)
+{
+    MostrarMenu();
+    string comando = LeerEntrada("inventario ");
+    Console.WriteLine($"Comando ingresado: {comando}");
+    continuar = false;
+}
+
+//====== METODOS ==========
+
+bool ProcesarComando(string comando)
+{
+    switch (comando)
+    {
+        case "listar":
+            ListarProductos();
+            return true;
+        case "agregar":
+            AgregarProducto();
+            return true;
+        case "buscar":
+            BuscarProducto();
+            return true;
+        case "salir":
+            return false;
+        default:
+            Console.WriteLine($"Comando '{comando}' no valido");
+            return true;
+    }
+}
+void ListarProductos()
+{
+    Console.WriteLine($"Total: {cantidadProductos} productos en el inventario");
+    Console.WriteLine($"Valor: ${valorTotalDelInventario}");
+}
+
+void AgregarProducto()
+{
+    Console.WriteLine("Agregar producto (Modulo3)");
+}
+
+void BuscarProducto()
+{
+    Console.WriteLine("Buscar producto (modulo 4)");
+}
+
+string LeerEntrada(string prompt)
+{
+    string salida = "El prompt ingresado es: " + prompt;
+    return salida; 
+}
+
+
+// ============ FUNCIONES ============== 
+void MostrarBanner()
+{
+    Console.WriteLine("╔══════════════════════════════════════╗");
+    Console.WriteLine("║   SISTEMA DE GESTIÓN DE INVENTARIO   ║");
+    Console.WriteLine("╚══════════════════════════════════════╝");
+    Console.WriteLine();
+}
+
+void MostrarAyuda()
+{
+    Console.WriteLine("USO: InventarioApp [comando] [opciones]");
+    Console.WriteLine();
+    Console.WriteLine("COMANDOS:");
+    Console.WriteLine("  --help, -h       Muestra esta ayuda");
+    Console.WriteLine("  --version, -v    Muestra la versión");
+    Console.WriteLine();
+    Console.WriteLine("EJEMPLOS:");
+    Console.WriteLine("  dotnet run -- --help");
+    Console.WriteLine("  dotnet run -- --version");
+}
+
+void MostrarMenu()
+{
+    Console.WriteLine("\nMENU PRINCIPAL");
+    Console.WriteLine("1. listar  - Ver productos");
+    Console.WriteLine("2. agregar - Anadír producto");
+    Console.WriteLine("3. buscar  - Buscar producto");
+    Console.WriteLine("4. salir   - Terminar\n");
+}
+
+

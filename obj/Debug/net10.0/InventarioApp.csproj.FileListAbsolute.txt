@@ -12,3 +12,4 @@
 /Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.pdb
 /Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.genruntimeconfig.cache
 /Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/ref/InventarioApp.dll
+/Users/mancomen/Desktop/PP/Inventario/InventarioApp/obj/Debug/net10.0/InventarioApp.sourcelink.json
