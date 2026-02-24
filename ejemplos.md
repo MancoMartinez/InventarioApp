@@ -1,20 +1,19 @@
-int numeroGlobal = 100;
+- List: var lista = new List<Producto>(); lista.Add("Manzana"); lista[0] //acceso por numero. 
+  
+  lista.Add("Manzana");
+  lista.Add("Manzana"); 
+  lista.Add("Pera"); 
 
-int MetodoA()
-{
-    int numeroLocal = 5;
-    Console.WriteLine(numeroGlobal); // OK, puede acceder global
-    Console.WriteLine(numeroLocal);  // OK, es suya
-    return numeroLocal;
-}
 
-void MetodoB()
-{
-    numeroLocalB = MetodoA();
-    Console.WriteLine(numeroGlobal); // OK, global existe
-    // Console.WriteLine(numeroLocaB); // ERROR: numeroLocal no existe aquí
-}
+- Dictionary: var inventario = new Dictionary<string, int>;  
+  
+  inventario["Ana"] = 25; 
+  inventario["Luis"] = 30;
 
-// Uso:
-MetodoA();
-MetodoB();
+  
+- HashSet: var colores = new HashSet<string>();
+  
+  colores.Add("Rojo");
+  colores.Add("Rojo"); // ignorado, no permite duplicados 
+  colores.Add("Azul"); // ["Rojo", "Azul"]  
+
